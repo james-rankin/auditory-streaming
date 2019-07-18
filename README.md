@@ -13,7 +13,7 @@ RunModelPF('single')
 
 To produce quick  (less 'trials') version of Fig 1C--D:\
 RunModelPF('pfp') \
-or the versions exactly as in our paper\
+or the version as in the paper\
 RunModelPF('pfp',320)
 
 If you don't have a Parallel Computing Toolbox license replace 'parfor'
