@@ -16,5 +16,5 @@ RunModelPF('pfp') \
 or the version as in the paper\
 RunModelPF('pfp',320)
 
-If you don't have a Parallel Computing Toolbox license replace 'parfor'
-with 'for'
+If you don't have a Parallel Computing Toolbox license replace two instances of 'parfor'
+with 'for' in RunModelPF.m
