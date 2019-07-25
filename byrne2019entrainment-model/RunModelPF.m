@@ -231,8 +231,8 @@ if strcmp(bfflag,'pfp')
     save(savename);
     disp(savename);
   
-    ProcPFData(savename)
-    return% don't run plotting commands
+    ProcPFData(savename)% plot the saved data from many simulations
+    return% don't run plotting commands below
 end
 %% Everything below here is plotting for bfflag='single' case
 make_colors
