@@ -1,8 +1,9 @@
 # auditory-streaming
 Neuromechanistic modelling of auditory streaming
 
-Code to accompany the paper Byrne, Rinzel and Rankin (2019)
+Code and experimental data to accompany the paper Byrne, Rinzel and Rankin (2019)
 Auditory streaming and bistability paradigm extended to a dynamic environment
+
 Contact: james.rankin@gmail.com
 
 If you use or adapt this code acknowledge us by citing our paper (presently under review)
