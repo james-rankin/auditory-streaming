@@ -2,9 +2,10 @@
 Neuromechanistic modelling of auditory streaming
 
 Code to accompany the paper Byrne, Rinzel and Rankin (2019)
-Entrainment of stream segregation in a dynamic environment
+Auditory streaming and bistability paradigm extended to a dynamic environment
 Contact: james.rankin@gmail.com
-If you use or adapt this code acknowledge us by citing our paper
+
+If you use or adapt this code acknowledge us by citing our paper (presently under review)
 
 To produce Fig 1B:\
 RunModelPF\

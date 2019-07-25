@@ -56,24 +56,24 @@ taua=140; % 1.4s;  adaptation timescale
 taunm=7; % 70ms; recurrent excitation timescale
 taud=300; % 3s; synaptic depression timescale; unused when synd=0;
 betai=0.3; % inhibition strength
-g=0.09; % adaptation strength
+g=0.11; % adaptation strength
 kf=12; tf=0.2; % for firing rate function
-betae=0.85;
-synd=0.25;
+betae=0.85;% recurrent excitation strength
+synd=0.25;% synaptic depression strength
 
 
 %% input and noise parameters
 PeriodFlag='ABA'; % AB or ABA or sync or A
-PR=1000/120;
+PR=1000/125;
 alpha1=1.5; % 15ms rise time 
 alpha2=8.25; % 82.5ms rise time 
 per=(100/PR)*2; % parameters for input 'impulse' function
 
 taux=10; % noise timescale 100ms
 
-gamma=0.09;
-tphi=4.25;
-Iamp=0.47;
+gamma=0.0075;% adaptation strength
+tphi=4.25;% spatial decay constant for input over tonotopy 
+Iamp=0.47;% input amplitude
 
 %% Initial conditions
 tstep=0.5;tfin=24000; % time discretisation
@@ -124,6 +124,7 @@ end
 svname=['SDIB_',bfflag,num2str(N),'x',num2str(M),'x',num2str(NumIterations),'_',...
     par1name,num2str(par1vals(1)),'_',num2str(par1vals(end)),'_',...
     par2name,num2str(par2vals(1)),'_',num2str(par2vals(end)),'_',...
+    'dfpm',num2str((DFmax-DFmin)/2),'_',...
     'ts',num2str(tstep),'_',...
     'g',num2str(g),'_',...
     'gam',num2str(gamma)...
