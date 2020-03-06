@@ -71,7 +71,7 @@ per=(100/PR)*2; % parameters for input 'impulse' function
 
 taux=10; % noise timescale 100ms
 
-gamma=0.0075;% adaptation strength
+gamma=0.0075;% noise strength
 tphi=4.25;% spatial decay constant for input over tonotopy 
 Iamp=0.47;% input amplitude
 
