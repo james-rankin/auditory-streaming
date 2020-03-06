@@ -53,8 +53,8 @@ betae=betai+0.35;
  %% input and noise parameters
 PeriodFlag='ABAfix'; % AB or ABA or sync or A
 PR=10;
-dr=1.5;
-
+alpha1=1.5; % 15ms rise time 
+alpha2=8.25; % 82.5ms rise time 
 per=(100/PR)*2;
 
 taux=10;
@@ -130,8 +130,8 @@ for i=1:length(par1vals)
         sqwave=@(t,per1)(heaviside(t)-heaviside(t-per1));
         sqwaveper=@(t,per1,per2)sqwave(t-floor(t/per2)*per2,per1);
         DILong=@(t)...
-            heaviside(t).*exp(2)./(dr).^2.*t.^2 .* exp(-2/(dr).*abs(t))+...
-            1/6*heaviside(t).*exp(2)./(dr*5.5).^2.*t.^2 .* exp(-2/(dr*5.5).*abs(t));
+            heaviside(t).*exp(2)./(alpha1).^2.*t.^2 .* exp(-2/(alpha1).*abs(t))+...
+            1/6*heaviside(t).*exp(2)./(alpha2).^2.*t.^2 .* exp(-2/(alpha2).*abs(t)); 
        
         phA1=@(t)(t-floor(t/per)*per).*sqwaveper(t,per/2,per*2);
         phA2=@(t)(t-floor(t/per)*per).*sqwaveper(t-per,per,per*2);
