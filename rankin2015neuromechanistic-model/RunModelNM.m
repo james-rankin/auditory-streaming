@@ -2,7 +2,7 @@ function RunModelNM
 %% 
 % Code to accompany the paper Rankin, Sussman and Rinzel (2015)
 % Neuromechanistic Model of Auditory Bistability
-% PLoS Computational Biology DOI:10.1371/journal.pcbi.1004555
+% PLoS Computational Biology https://doi.org/10.1371/journal.pcbi.1004555
 % Contact: james.rankin@gmail.com
 % 
 % If you use or adapt this code acknowledge us by citing our paper
@@ -16,8 +16,8 @@ make_colors
 % - with fixed nmda excitation and local inhibition (efix)
 % - with dynamic nmda exication (with synaptic depression) and global inhibition (edyn)
 caseflag='fig4';DF=5;
-% caseflag='efix';phi=5; % DF value
-% caseflag='edyn';phi=5; % DF value
+% caseflag='efix';DF=5; % DF value
+% caseflag='edyn';DF=5; % DF value
 
 plotflag='short'; % plot first 20s
 % plotflag='long'; % plot full 4 minutes
@@ -86,6 +86,7 @@ switch caseflag
         loadnoise=0;
     case 'edyn'
         sigma=0.075;
+        loadnoise=0;
     otherwise
         
 end
