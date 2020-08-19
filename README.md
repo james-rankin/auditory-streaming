@@ -3,10 +3,12 @@
 
 Code and experimental data to accompany the papers
 * Byrne, Rinzel and Rankin (2019) *Auditory streaming and bistability paradigm extended to a dynamic environment* [DOI](https://doi.org/10.1016/j.heares.2019.107807)
-  * main script: ``byrne2019auditory/RunModelPF.m``
+  * main script: ``byrne2019auditory-model/RunModelPF.m``
 * Rankin, Osborn Popp and Rinzel (2017) *Stimulus Pauses and Perturbations Differentially Delay or Promote the Segregation of Auditory Objects: Psychoacoustics and Modeling* [DOI](https://doi.org/10.3389/fnins.2017.00198)
-  * main script: ``rankin2017stimulus/RunModelBU.m``
-
+  * main script: ``rankin2017stimulus-model/RunModelBU.m``  
+* Rankin, Sussman and Rinzel (2015) *Neuromechanistic Model of Auditory Bistability* [DOI](https://doi.org/10.1371/journal.pcbi.1004555)
+  * main script: ``rankin2015neuromechanistic-model/RunModelNM.m``
+  
 If you have any questions about the code, would like more detailed commenting or would like to reproduce other figures from the papers then please email james.rankin@gmail.com
 
 If you use or adapt this code acknowledge us by citing our papers
